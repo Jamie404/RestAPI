@@ -1,0 +1,21 @@
+GET http://localhost:3005/users
+
+###
+
+POST http://localhost:3005/users
+Content-Type: application/json
+
+{
+    "email": "flargle@gargle.com", 
+    "password": "knob" 
+}
+
+###
+
+POST http://localhost:3005/login
+Content-Type: application/json
+
+{
+    "email": "flargle@gargle.com", 
+    "password": "knob" 
+}

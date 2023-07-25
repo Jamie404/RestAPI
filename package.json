@@ -1,0 +1,17 @@
+{
+  "name": "wc2022restapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Jamie McGee",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.22"
+  }
+}
