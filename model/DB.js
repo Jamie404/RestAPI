@@ -1,6 +1,6 @@
-var mysql = require("mysql");
+const mysql = require("mysql");
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
@@ -9,8 +9,11 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function (err) {
-  if (err) throw err;
-  console.log(`Sucessfully connected to MySQL database weather2023`);
+  if (err) {
+    console.log(err);
+    throw err;
+  }
+  console.log(`Sucessfully connected to MySQL database..`);
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////

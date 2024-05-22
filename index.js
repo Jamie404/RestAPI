@@ -1,9 +1,9 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var cors = require("cors");
-var model = require("./model/DB.js");
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const model = require("./model/DB.js");
 
-var app = express();
+const app = express();
 
 app.use(express.static("public"));
 
@@ -69,6 +69,6 @@ app.route("/login/").post(function (req, res) {
   model.loginUser(req, res);
 });
 
-var myServer = app.listen(3005, function () {
+const myServer = app.listen(3005, function () {
   console.log("Server listening on port 3005");
 });
