@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var cors = require("cors");
-var model = require("./model/weather2023DB.js");
+var model = require("./model/DB.js");
 
 var app = express();
 
