@@ -1,6 +1,5 @@
 const express = require('express');
-const model = require('./model/DB.js');
-
+const model = require('./model/DB2.js'); // If the file is actually named DB2.js
 const router = express.Router();
 
 // Define your routes
